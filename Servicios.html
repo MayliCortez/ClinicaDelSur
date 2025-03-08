@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Centro médico del sur</title>
+    <link rel="icon" type="image/png" href="img/icono.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Lora:wght@400;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/servicios.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <!-- Botón para Móvil -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Logo en la Navbar (Solo para móviles) -->
+            <a class="navbar-brand d-lg-none" href="#">
+                <img src="img/logo.png" alt="Logo" id="logo-navbar">
+            </a>
+    
+            <!-- Contenido del Navbar -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="QuienesSomos.html">¿Quiénes somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Servicios.html">Nuestros servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contactanos.html">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Logo centrado debajo de la Navbar -->
+    <div class="logo-container">
+        <a href="#">
+            <img src="img/logo.png" alt="Logo" id="logo-clinica">
+        </a>
+    </div>
+    <!--CADRSSSS-->
+    <!-- Contenedor para las Cards -->
+    <!-- Contenedor para el Título y las Cards -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Nuestros Exámenes de Laboratorio</h2>
+    
+        <!-- Usamos row normal y col-md-6 en cada card -->
+        <div class="row g-4">
+        
+        <!-- Card 1 -->
+        <div class="col-md-6">
+            <div class="card h-100">
+            <div class="row g-0">
+                <div class="col-md-4 d-flex align-items-center">
+                <img src="img/servicios/1erServicio.jpg" class="img-fluid" alt="Examen de Sangre" 
+                    style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Análisis de Sangre</h5>
+                    <p class="card-text">Pruebas de sangre completas para diagnósticos de salud.</p>
+                    <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
+                    <a href="analisisSangre.html" class="btn btn-primary">Ver más</a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    
+        <!-- Card 2 -->
+        <div class="col-md-6">
+            <div class="card h-100">
+            <div class="row g-0">
+                <div class="col-md-4 d-flex align-items-center">
+                <img src="img/servicios/2doServicio.jpg" class="img-fluid" alt="Prueba de ADN" 
+                    style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Pruebas Genéticas</h5>
+                    <p class="card-text">Secuenciación de ADN para detección de enfermedades hereditarias.</p>
+                    <p class="card-text"><small class="text-muted">Última actualización hace 5 minutos</small></p>
+                    <a href="pruebasgeneticas.html" class="btn btn-primary">Ver más</a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    
+        <!-- Card 3 -->
+        <div class="col-md-6">
+            <div class="card h-100">
+            <div class="row g-0">
+                <div class="col-md-4 d-flex align-items-center">
+                <img src="img/servicios/3erServicio.jpg" class="img-fluid" alt="Consulta Médica" 
+                    style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Consulta Médica</h5>
+                    <p class="card-text">Asesoría médica profesional y chequeos médicos.</p>
+                    <p class="card-text"><small class="text-muted">Última actualización hace 10 minutos</small></p>
+                    <a href="consultamedica.html" class="btn btn-primary">Ver más</a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    
+        <!-- Card 4 -->
+        <div class="col-md-6">
+            <div class="card h-100">
+            <div class="row g-0">
+                <div class="col-md-4 d-flex align-items-center">
+                <img src="img/servicios/4toServicio.jpg" class="img-fluid" alt="Prueba de Coagulación" 
+                    style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Prueba de Coagulación</h5>
+                    <p class="card-text">Detección de trastornos de coagulación sanguínea.</p>
+                    <p class="card-text"><small class="text-muted">Última actualización hace 15 minutos</small></p>
+                    <a href="pruebacua.html" class="btn btn-primary">Ver más</a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    
+        <!-- Card 5 -->
+        <div class="col-md-6">
+            <div class="card h-100">
+            <div class="row g-0">
+                <div class="col-md-4 d-flex align-items-center">
+                <img src="img/servicios/5toServicio.jpg" class="img-fluid" alt="Extracción de Sangre" 
+                    style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Extracción de Sangre del Paciente</h5>
+                    <p class="card-text">Recolección de muestras de sangre para diversas pruebas.</p>
+                    <p class="card-text"><small class="text-muted">Última actualización hace 20 minutos</small></p>
+                    <a href="extraccionSangre.html" class="btn btn-primary">Ver más</a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    
+        <!-- Card 6 -->
+        <div class="col-md-6">
+            <div class="card h-100">
+            <div class="row g-0">
+                <div class="col-md-4 d-flex align-items-center">
+                <img src="img/servicios/6toServicio.jpg" class="img-fluid" alt="Diálisis" 
+                    style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Tratamiento de Diálisis</h5>
+                    <p class="card-text">Soporte renal para pacientes con insuficiencia renal.</p>
+                    <p class="card-text"><small class="text-muted">Última actualización hace 30 minutos</small></p>
+                    <a href="tratamientodialisi.html" class="btn btn-primary">Ver más</a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+  
+  
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Notas -->
+                <div class="col-md-4 mb-4 order-3 order-md-1">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-sticky-note"></i> Notas</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#"><i class="fas fa-info-circle"></i> Información Importante</a></li>
+                                <li><a href="#"><i class="fas fa-bullhorn"></i> Avisos y Comunicados</a></li>
+                                <li><a href="#"><i class="fas fa-newspaper"></i> Noticias</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menú -->
+                <div class="col-md-4 mb-4 order-2 order-md-2">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-bars"></i> Menú</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="index.html"><i class="fas fa-home"></i>Inicio</a></li>
+                                <li><a href="QuienesSomos.html"><i class="fas fa-users"></i> ¿Quiénes somos?</a></li>
+                                <li><a href="Servicios.html"><i class="fas fa-concierge-bell"></i> Nuestros servicios</a></li>
+                                <li><a href="Contactanos.html"><i class="fas fa-envelope"></i> Contáctanos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Artículos -->
+                <div class="col-md-4 mb-4 order-1 order-md-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-book"></i> Artículos</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#"><i class="fas fa-heartbeat"></i> Consejos de Salud</a></li>
+                                <li><a href="#"><i class="fas fa-medkit"></i> Novedades Médicas</a></li>
+                                <li><a href="#"><i class="fas fa-microscope"></i> Investigaciones Recientes</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Línea divisoria y derechos de autor -->
+            <div class="text-center mt-4">
+                <hr class="footer-divider">
+                <p class="footer-text">© 2025 Control Médico del Sur. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

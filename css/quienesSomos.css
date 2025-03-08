@@ -1,0 +1,161 @@
+/* FUENTE */
+body {
+    font-family: 'Roboto', 'Merriweather', 'Lora', sans-serif;
+    background-color: #000000; /* Negro */
+    color: #2C3E50; /* Azul oscuro */
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
+p {
+    font-family: 'Lora', serif;
+}
+
+
+/* NAVBAR */
+.navbar {
+    background-color: #2C3E50 !important; /* Azul oscuro */
+}
+
+.navbar-brand {
+    order: 1; /* Asegura que el logo esté en el lado derecho */
+    margin-left: auto !important; /* Alinea el logo a la derecha */
+    padding-left: 0; /* Evita que el logo se mueva hacia abajo */
+}
+
+.navbar-brand img {
+    height: 80px;
+    border-radius: 50%;
+}
+
+.navbar-toggler {
+    order: 0; /* Asegura que el botón del menú esté en el lado izquierdo en móvil */
+}
+
+.navbar-nav {
+    order: 2; /* Coloca el contenido del navbar en el centro */
+    flex-grow: 1; /* Asegura que el contenido del navbar ocupe el espacio disponible */
+}
+
+.navbar-nav .nav-link {
+    color: #000000 !important; /* Blanco */
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #1f88bd !important; /* Verde suave */
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.justify-content-between {
+    justify-content: space-between !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+/* FOOTER */
+.footer {
+    background-color: #343a40; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 20px 0; /* Relleno arriba y abajo */
+}
+
+.footer .card {
+    background-color: transparent; /* Fondo transparente para las tarjetas */
+    border: none; /* Sin bordes para las tarjetas */
+}
+
+.footer .card-title i {
+    color: #c2cbd4;
+    margin-right: 10px; /* Espacio a la derecha del icono */
+}
+
+
+
+/* Color específico para el título de Menú */
+.footer .card-title:first-of-type {
+    color: #777fa1; /* Naranja */
+}
+
+
+.footer .list-unstyled a {
+    color: #ffffff; /* Enlaces en blanco */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.footer .list-unstyled a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+.footer-divider {
+    border-top: 1px solid #ffffff; /* Línea divisoria blanca */
+}
+
+.footer-text {
+    margin: 0; /* Sin margen */
+    padding: 10px 0; /* Relleno arriba y abajo */
+}
+
+/*QUIENES SOMOS LOGO*/
+/* Logo centrado debajo del navbar */
+.logo-container {
+    text-align: center;
+    margin-top: 20px; /* Espaciado desde el navbar */
+}
+
+#logo-clinica {
+    max-width: 300px; /* Limita el tamaño máximo del logo */
+    height: auto; /* Mantiene las proporciones del logo */
+}
+
+/* Ajusta el color y tamaño del texto en el navbar si es necesario */
+.navbar {
+    background-color: #2C3E50 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #030303 !important; /* Blanco */
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #1f88bd !important;
+}
+/*MODO MOVIL FONDO DE PANTALLA DESAPARICION*/
+/* Para pantallas grandes: Muestra el logo debajo de la navbar y oculta el de la navbar */
+@media (min-width: 992px) {
+    .logo-container {
+        display: block; /* Muestra el logo debajo de la navbar */
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .navbar-brand.d-lg-none {
+        display: none !important; /* Oculta el logo dentro de la navbar en pantallas grandes */
+    }
+}
+
+/* Para móviles: Oculta el logo centrado y muestra el de la navbar alineado a la derecha */
+@media (max-width: 991px) {
+    .logo-container {
+        display: none; /* Oculta el logo debajo de la navbar */
+    }
+
+    .navbar-brand.d-lg-none {
+        display: block !important; /* Muestra el logo en la navbar */
+        margin-left: auto !important; /* Lo empuja hacia la derecha */
+        padding-right: 15px; /* Espaciado a la derecha */
+    }
+
+    .navbar-brand.d-lg-none img {
+        height: 50px; /* Ajusta el tamaño del logo en móviles */
+    }
+}

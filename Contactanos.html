@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Centro médico del sur</title>
+    <link rel="icon" type="image/png" href="img/icono.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Lora:wght@400;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/contactanos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Logo en la Navbar (Solo para móviles) -->
+            <a class="navbar-brand d-lg-none" href="#">
+                <img src="img/logo.png" alt="Logo" id="logo-navbar">
+            </a>
+    
+            <!-- Contenido del Navbar -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="QuienesSomos.html">¿Quiénes somos?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Servicios.html">Nuestros servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contactanos.html">Contáctanos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Logo centrado debajo de la Navbar -->
+    <div class="logo-container text-center my-4">
+        <a href="#">
+            <img src="img/logo.png" alt="Logo" id="logo-clinica" class="img-fluid">
+        </a>
+    </div>
+
+    <!-- Formulario de Contacto -->
+    <div class="container my-5">
+        <h2 class="text-center">Formulario de Contacto</h2>
+        
+        <!-- Formulario -->
+        <form>
+            <!-- Nombre -->
+            <div class="mb-4">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre">
+            </div>
+            
+            <!-- Correo Electrónico -->
+            <div class="mb-4">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
+            </div>
+            
+            <!-- Mensaje -->
+            <div class="mb-4">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Escriba su mensaje"></textarea>
+            </div>
+
+            <!-- CAPTCHA (simulación de CAPTCHA aquí) -->
+            <div class="mb-4 text-center">
+                <div class="captcha" style="border: 1px solid #ddd; padding: 10px; width: 50%; margin: 0 auto;">
+                    <p>Simulación de CAPTCHA: Resuelva el siguiente reto</p>
+                    <input type="text" class="form-control" placeholder="Ingrese el código de verificación">
+                </div>
+            </div>
+
+            <!-- Botones Enviar y Borrar -->
+            <div class="d-flex justify-content-between">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-secondary">Borrar</button>
+            </div>
+        </form>
+    </div>
+    
+
+    <!-- Mapa de Google con nuestra ubicación -->
+    <div class="container text-center my-4">
+        <h3>📍 Nuestra Ubicación</h3>
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121835.81557243782!2d-66.16387555!3d-17.394059099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e373e0d9e4ab27%3A0xa2719ae9532c3e65!2sCochabamba!5e0!3m2!1ses-419!2sbo!4v1739970582498!5m2!1ses-419!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Notas -->
+                <div class="col-md-4 mb-4 order-3 order-md-1">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title notes-title"><i class="fas fa-sticky-note"></i> Notas</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#"><i class="fas fa-info-circle"></i> Información Importante</a></li>
+                                <li><a href="#"><i class="fas fa-bullhorn"></i> Avisos y Comunicados</a></li>
+                                <li><a href="#"><i class="fas fa-newspaper"></i> Noticias</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menú -->
+                <div class="col-md-4 mb-4 order-2 order-md-2">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-bars"></i> Menú</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="index.html"><i class="fas fa-home"></i>Inicio</a></li>
+                                <li><a href="QuienesSomos.html"><i class="fas fa-users"></i> ¿Quiénes somos?</a></li>
+                                <li><a href="Servicios.html"><i class="fas fa-concierge-bell"></i> Nuestros servicios</a></li>
+                                <li><a href="Contactanos.html"><i class="fas fa-envelope"></i> Contáctanos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Artículos -->
+                <div class="col-md-4 mb-4 order-1 order-md-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-book"></i> Artículos</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#"><i class="fas fa-heartbeat"></i> Consejos de Salud</a></li>
+                                <li><a href="#"><i class="fas fa-medkit"></i> Novedades Médicas</a></li>
+                                <li><a href="#"><i class="fas fa-microscope"></i> Investigaciones Recientes</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Línea divisoria y derechos de autor -->
+            <div class="text-center mt-4">
+                <hr class="footer-divider">
+                <p class="footer-text">© 2025 Control Médico del Sur. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
